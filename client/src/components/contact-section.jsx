@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "ajiteshdakua@gmail.com",
+    value: "ajiteshdakua8@gmail.com",
     href: "mailto:ajiteshdakua@gmail.com",
     bgColor: "bg-blue-100 dark:bg-blue-900",
     iconColor: "text-blue-600 dark:text-blue-400",
@@ -32,15 +32,15 @@ const contactInfo = [
     icon: Linkedin,
     title: "LinkedIn",
     value: "linkedin.com",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/ajitesh-dakua-aba38a28a",
     bgColor: "bg-blue-100 dark:bg-blue-900",
     iconColor: "text-blue-600 dark:text-blue-400",
   },
   {
     icon: Github,
     title: "GitHub",
-    value: "ajiteshdakua.github.io",
-    href: "https://ajiteshdakua.github.io",
+    value: "github.io",
+    href: "https://github.com/AjiteshDakua",
     bgColor: "bg-gray-100 dark:bg-gray-700",
     iconColor: "text-gray-700 dark:text-gray-300",
   },
@@ -138,18 +138,53 @@ export default function ContactSection() {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
 
     const validationErrors = validateForm(formData);
-
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
-    setErrors({});
-    contactMutation.mutate(formData);
+    const formDataObject = new FormData(event.target);
+    formDataObject.append("access_key", "a9bb9cca-fcf4-47b0-bd41-c84ae2929fa9");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataObject,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Message Sent!",
+          description:
+            "Thank you for contacting me. I will get back to you soon.",
+        });
+
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setErrors({});
+        event.target.reset(); // optional
+      } else {
+        toast({
+          title: "Failed to Send Message",
+          description:
+            data.message || "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Network Error",
+        description: "Check your internet connection and try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -214,7 +249,7 @@ export default function ContactSection() {
           >
             <Card>
               <CardContent className="p-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={onSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
                       <Label htmlFor="name">Name</Label>
@@ -222,6 +257,7 @@ export default function ContactSection() {
                         id="name"
                         type="text"
                         value={formData.name}
+                        name="name"
                         onChange={(e) =>
                           handleInputChange("name", e.target.value)
                         }
@@ -241,6 +277,7 @@ export default function ContactSection() {
                         id="email"
                         type="email"
                         value={formData.email}
+                        name="email"
                         onChange={(e) =>
                           handleInputChange("email", e.target.value)
                         }
@@ -261,6 +298,7 @@ export default function ContactSection() {
                     <Input
                       id="subject"
                       type="text"
+                      name="Subject"
                       value={formData.subject}
                       onChange={(e) =>
                         handleInputChange("subject", e.target.value)
@@ -280,6 +318,7 @@ export default function ContactSection() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
+                      name="message"
                       value={formData.message}
                       onChange={(e) =>
                         handleInputChange("message", e.target.value)
