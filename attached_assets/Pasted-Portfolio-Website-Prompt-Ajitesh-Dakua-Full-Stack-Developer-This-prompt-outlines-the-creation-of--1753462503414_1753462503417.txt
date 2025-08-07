@@ -1,0 +1,90 @@
+Portfolio Website Prompt: Ajitesh Dakua - Full Stack Developer
+This prompt outlines the creation of a modern and minimalist portfolio website for Ajitesh Dakua, an aspiring B.Tech CSE graduate with a strong focus on React, Tailwind CSS, and full-stack development. The website aims to showcase his problem-solving skills, educational background, work experience, and projects to secure a job in an IT company.
+
+Website Structure & Content
+The website will feature the following key sections:
+
+1. Home
+Hero Section: A prominent display of "Ajitesh Dakua" as the full name, along with a professional profile picture (placeholder for now). A brief, impactful tagline like "Full Stack Developer | Problem Solver | React & Tailwind CSS Enthusiast" should be present.
+
+Brief Introduction: A concise summary of Ajitesh's background, highlighting his graduation from Brainware University (2023-2027) and his interest in React, Tailwind CSS, and problem-solving.
+
+Call to Action: A clear call to action such as "View My Work" or "Get in Touch."
+
+2. About
+Personal Bio: Elaborate on the provided bio: "My interests are React, Tailwind CSS, etc. My goal is a job in an IT company. My unique skill is problem-solving." This section should expand on his passion for these technologies and his dedication to finding innovative solutions.
+
+Educational Background:
+
+Degree: B.Tech CSE
+
+Institution: Brainware University
+
+Years of Graduation: 2023-2027
+
+Work Experience:
+
+Internship: Agnirath Aerospace and Defense Research Pvt Limited (include dates if available, otherwise specify "Internship")
+
+Skills & Expertise:
+
+Primary Skills: React, JavaScript, Python, Tailwind CSS, Firebase, MongoDB
+
+Areas of Expertise: Web Development, Backend Integration
+
+3. Portfolio
+Project Showcase: Despite the user stating "no" for notable projects, it's crucial to showcase the projects mentioned under work experience. For each project, include:
+
+Project Name: (e.g., E-commerce Application, Chatting App, Doctor Appointment Web)
+
+Brief Description: A sentence or two describing the project's purpose and Ajitesh's role/contribution.
+
+Technologies Used: (e.g., React, Node.js, MongoDB, Tailwind CSS, etc.)
+
+Links: (e.g., Live Demo, GitHub Repository - if available, even if internal projects, display them visually with screenshots)
+
+4. Services
+Web Development: Detail what this service entails (e.g., building responsive and dynamic web applications).
+
+Backend Integration: Describe expertise in integrating databases and APIs to create robust backend systems.
+
+5. Contact
+Contact Form: A functional contact form for inquiries.
+
+Contact Information:
+
+Email: ajiteshdakua@gmail.com
+
+Phone Number: 5719500638
+
+LinkedIn: linkedin.com
+
+GitHub: ajiteshdakua.github.io
+
+Social Media Links: Include icons for LinkedIn and GitHub.
+
+Design Elements & Style Preferences
+Overall Style: Modern and Minimalist. Clean lines, ample white space, and a focus on content.
+
+Color Scheme: Implement a dark/light mode toggle. Users should be able to switch between a dark theme and a light theme.
+
+Dark Mode: Suggest a sophisticated dark palette with subtle accent colors (e.g., deep blues, grays, with a vibrant but not overwhelming accent color like a subtle teal or purple).
+
+Light Mode: A clean and crisp light theme with complementary neutral tones and the same accent color from the dark mode for consistency.
+
+Typography: Modern and legible sans-serif fonts for headings and body text.
+
+Animation Effects: Subtle and tasteful animation effects for transitions, hovers, and loading states to enhance user experience without being distracting. Examples include smooth scrolling, subtle element reveals on scroll, and interactive hover effects on portfolio items.
+
+Responsive Design: The website must be fully responsive and optimized for all devices (desktop, tablet, mobile).
+
+Profile Picture: A dedicated section or element for Ajitesh's profile picture, perhaps circular or with a subtle modern frame.
+
+Specific Requirements & Preferences
+The website should clearly communicate Ajitesh's focus on React and Tailwind CSS.
+
+Emphasize his problem-solving unique selling proposition.
+
+The dark/light mode toggle is a mandatory feature.
+
+All provided contact information must be easily accessible.
