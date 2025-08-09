@@ -82,7 +82,7 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Ajitesh D.
+            &lt;/AD&gt;
           </motion.a>
 
           {/* Desktop Navigation */}
