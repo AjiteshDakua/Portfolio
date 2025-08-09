@@ -61,7 +61,7 @@ export default function HeroSection() {
               <a
                 href="/MY_Resume.pdf"
                 download="Ajitesh_Dakua_Resume.pdf"
-                className="bg-gradient-to-r from-blue-500 to-teal-400 text-white px-8 py-3 font-semibold rounded-xl shadow-md transition-all duration-300 hover:from-teal-400 hover:to-blue-500 hover:scale-105 hover:shadow-xl flex items-center gap-2"
+                className="bg-gradient-to-r from-blue-500 to-teal-400 text-white px-8 py-3 font-semibold rounded-xl shadow-md transition-all duration-300 hover:from-teal-400 hover:to-blue-500 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
               >
                 My Resume
                 <Download className="w-5 h-5" />
