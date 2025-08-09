@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "571-950-0638",
+    value: "954-XXXX-579",
     href: "tel:5719500638",
     bgColor: "bg-green-100 dark:bg-green-900",
     iconColor: "text-green-600 dark:text-green-400",

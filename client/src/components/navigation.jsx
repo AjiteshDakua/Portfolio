@@ -74,10 +74,10 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <motion.a // Apply motion for a subtle logo animation
+          <motion.a
             href="#home"
             onClick={(e) => handleNavClick(e, "#home")}
-            className="font-extrabold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 tracking-tight transition-transform duration-300 hover:scale-105"
+            className="logo-font font-extrabold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 tracking-tight transition-transform duration-300 hover:scale-105"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
