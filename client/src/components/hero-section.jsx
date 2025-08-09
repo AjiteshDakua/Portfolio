@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Code, Sparkles } from "lucide-react";
+import { Code, Sparkles, Download } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { motion } from "framer-motion";
 import { assets } from "../assets/assets";
@@ -58,13 +58,14 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                onClick={() => handleNavClick("#portfolio")}
-                className="bg-gradient-to-r from-blue-500 to-teal-400 text-white px-8 py-3 font-semibold rounded-xl shadow-md transition-all duration-300 hover:from-teal-400 hover:to-blue-500 hover:scale-105 hover:shadow-xl"
+              <a
+                href="/MY_Resume.pdf"
+                download="Ajitesh_Dakua_Resume.pdf"
+                className="bg-gradient-to-r from-blue-500 to-teal-400 text-white px-8 py-3 font-semibold rounded-xl shadow-md transition-all duration-300 hover:from-teal-400 hover:to-blue-500 hover:scale-105 hover:shadow-xl flex items-center gap-2"
               >
-                View My Work
-              </Button>
+                My Resume
+                <Download className="w-5 h-5" />
+              </a>
 
               <Button
                 variant="outline"
