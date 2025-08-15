@@ -1,6 +1,7 @@
 import hero_profile from "./hero_profile.jpg";
 import LMS_project from"./LMS_project.png";
 import Ecomerse_project from "./Ecomerse_project.png";
+import Doctor_Appointment from "./Doctor_Appointment.png";
 
 
 // Project data moved from PortfolioSection.jsx
@@ -11,32 +12,37 @@ const projects = [
     description:
       "A full-featured e-commerce platform with user authentication, product management, and secure payment integration.",
     image: Ecomerse_project,
-    technologies: ["React", "Node.js","Express.js", "MongoDB", "Tailwind CSS"],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     demoUrl: "https://forever-sage.vercel.app/",
     codeUrl: "#",
   },
-//   {
-//     id: 2,
-//     name: "Chatting App",
-//     description:
-//       "Real-time messaging application with group chats, file sharing, and online status indicators.",
-//     image:
-//       "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-//     technologies: ["React", "Socket.io", "Firebase", "Tailwind CSS"],
-//     demoUrl: "#",
-//     codeUrl: "#",
-//   },
-//   {
-//     id: 3,
-//     name: "Doctor Appointment Web",
-//     description:
-//       "Healthcare management system for booking appointments, managing patient records, and doctor schedules.",
-//     image:
-//       "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-//     technologies: ["React", "Express.js", "MongoDB", "Python"],
-//     demoUrl: "#",
-//     codeUrl: "#",
-//   },
+  {
+    id: 2,
+    name: "Doctor Appointment",
+    description:
+      "Real-time messaging application with group chats, file sharing, and online status indicators.",
+    image: "Doctor_Appointment",
+    technologies: [
+      "React",
+      "Firebase",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+    ],
+    demoUrl: "#",
+    codeUrl: "#",
+  },
+  //   {
+  //     id: 3,
+  //     name: "Doctor Appointment Web",
+  //     description:
+  //       "Healthcare management system for booking appointments, managing patient records, and doctor schedules.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+  //     technologies: ["React", "Express.js", "MongoDB", "Python"],
+  //     demoUrl: "#",
+  //     codeUrl: "#",
+  //   },
   {
     id: 4,
     name: "LMS (Learning Management System)",
