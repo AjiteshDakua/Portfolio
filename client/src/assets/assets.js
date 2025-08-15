@@ -20,8 +20,8 @@ const projects = [
     id: 2,
     name: "Doctor Appointment",
     description:
-      "Real-time messaging application with group chats, file sharing, and online status indicators.",
-    image: "Doctor_Appointment",
+      "A healthcare management platform that allows users to easily book doctor appointments, manage health records, and receive timely reminders. Built with real-time updates, secure authentication, and a user-friendly interface to streamline patient-doctor interactions.",
+    image: Doctor_Appointment,
     technologies: [
       "React",
       "Firebase",
@@ -29,7 +29,7 @@ const projects = [
       "MongoDB",
       "Tailwind CSS",
     ],
-    demoUrl: "#",
+    demoUrl: "https://doctor-appointment-cyan.vercel.app/",
     codeUrl: "#",
   },
   //   {
